@@ -36,14 +36,11 @@
 } 
 * {
     margin: 0;
-    /* -webkit-font-smoothing: antialiased; */
     color: #333;
     box-sizing: border-box;
 }
 .header {
     display: flex;
-    /* -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal; */
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -69,7 +66,6 @@
 }
 .mattel-logo, .barbie-logo, .fisher-price-logo, .all-brands-logo {
     display: flex;
-    /* -webkit-box-align: center; */
     align-items: center;
     -webkit-box-pack: center;
     justify-content: center;
@@ -80,9 +76,7 @@
 }
 .hot-wheels-logo {
     display: flex;
-    /* -webkit-box-align: center; */
     align-items: center;
-    /* -webkit-box-pack: center; */
     justify-content: center;
     height: 40px;
     padding: 0 8px;
@@ -107,8 +101,6 @@
 }
 .header-ul{
     display: flex;
-    /* -webkit-box-orient: horizontal; */
-    /* -webkit-box-direction: normal; */
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
@@ -123,8 +115,6 @@
     display: flex;
     flex-wrap: wrap;
     padding: 32px 12px;
-    /* -webkit-box-orient: horizontal; */
-    /* -webkit-box-direction: normal; */
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -1057,13 +1047,13 @@
     .hotwheels-race-img-2{
         display: none;
     }
+    #construction-img {
+        display: none;
+    }
 }
 @media (min-width: 1024px) {
     .header {
         display: flex;
-        /* -webkit-box-orient: horizontal; */
-        /* -webkit-box-direction: normal; */
-        /* flex-direction: row; */
         flex-flow: row nowrap;
         align-items: center;
         justify-content: space-between;
@@ -1074,9 +1064,6 @@
     .header-logo {
         display: flex;
         align-items: center;
-        /* -webkit-box-orient: horizontal; */
-        /* -webkit-box-direction: normal; */
-        /* -webkit-box-align: center; */
         justify-content: unset;
         flex-grow: 0;
         box-sizing: border-box;
@@ -1086,7 +1073,6 @@
     }
     .mattel-logo, .barbie-logo, .fisher-price-logo, .all-brands-logo {
         display: flex;
-        /* -webkit-box-align: center; */
         align-items: center;
         -webkit-box-pack: center;
         justify-content: center;
@@ -1097,9 +1083,7 @@
     }
     .hot-wheels-logo {
         display: flex;
-        /* -webkit-box-align: center; */
         align-items: center;
-        /* -webkit-box-pack: center; */
         justify-content: center;
         height: 40px;
         padding: 0 8px;
@@ -1153,8 +1137,6 @@
         margin: 0px 0rem 0 0;
         vertical-align: middle;
         width: 1.75rem;
-        /* padding-bottom: 16.85714%;
-        height: 0; */
         overflow: hidden;
         position: relative;
         box-sizing: border-box;
@@ -1408,6 +1390,7 @@
       }
       .categories-shop-top {
         padding: 2.5rem;
+        background-size: cover;
       }
       .categories-shop {
         margin-left: 2rem;
@@ -1421,10 +1404,16 @@
       .categories-collector {
         justify-content: center;
         column-gap: 1.25rem;
-        height: 196.203px;
       }
       .categories-toy {
-        flex-shrink: unset;
+        width: calc((100% / 6) - (100px / 6));
+        max-width: 11.25rem;
+      }
+      #construction-img {
+        transform: rotate3d(180);
+      }
+      #construction-car {
+        display: none;
       }
       .shop-container {
         margin: 0 1.25rem;
@@ -1553,7 +1542,7 @@
         height: unset;
       }
       .hotwheels-race-text {
-        /* width: calc(32% + 84px); */
+        width: calc(32% + 84px);
       }
 }
 @media (min-width:1440px) {
