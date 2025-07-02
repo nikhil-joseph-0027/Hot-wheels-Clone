@@ -28,12 +28,13 @@
 }
 @font-face {
     font-family: 'Helvetica Neue';
-    src: url("fonts/HelveticaNeueBlackCondensed.ttf") format("truetype");
+    src: url("fonts/HelveticaNeueBlackCondensHelveticaNeueed.ttf") format("truetype");
 }  
 @font-face {
   font-family: 'HelveticaNeue';
   src: url("fonts/HelveticaNeueLTStd-Roman_535556911_ee55463.otf") format("opentype");
 } 
+                  
 * {
     margin: 0;
     color: #333;
@@ -433,7 +434,7 @@
     position: relative;
     user-select: none;
     visibility: visible;
-    height: 462.391px;
+    height: 445.391px;
     touch-action: pan-y;
     -ms-flex-negative: 0;
     cursor: grab;
@@ -504,9 +505,8 @@
   }
   .shop-text {
     padding: 1.5rem 0.625rem 1.4375rem;
-    flex-grow: 1;
     margin-top: 0;
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -530,6 +530,7 @@
     text-overflow: ellipsis;
     -webkit-box-orient: 3;
   }
+
   .shop-buy {
     display: inline-flex;
     align-items: center;
@@ -662,55 +663,47 @@
     white-space: nowrap;
   }
   .pixelated {
-    position: relative;
-    padding: 2.5rem 1.5rem 5rem;
+    padding: 2.5rem 1.25rem 5rem;
     margin: 0 auto;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    flex-direction: column;
-    row-gap: 1.25rem;
-    height: 517.75px;
-    touch-action: pan-y;
-    overflow: visible;
+    flex-direction: row;
     position: relative;
-    user-select: none;
-    overflow-y: hidden;
-  }                                                                                              
+    overflow: visible;
+    max-width: 100%;
+  }
   .pixelated-adventures {
-    left: 0px;
-    transform: translateX(0%);
-    position: absolute;
-    width: 257.19%;
-    height: 467px;
-    cursor: grab;
     display: flex;
-    overflow-y: scroll;
-    padding-left: 1.3rem;
+    overflow: scroll;
+    column-gap: 1.25rem;
+    scrollbar-width: none;   
+    margin-right: -20px;
+    position: relative;
+    /* height: 478.422px;
+    touch-action: pan-y; */
+    left: 0;
+    transform: translateX(0%);
   }
   .pixelated-game {
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: 0px;
-    transform: translateX(0%);
-    margin-bottom: 0;
-    margin-right: 1.25rem;
+    margin-right: 0.06rem;
     width: 88%;
+    min-height: 100%;
+    z-index: 2;
     border-radius: 0.75rem;
     border: 0.0625rem solid rgba(14, 14, 14, 0.1);
     box-shadow: 0 0.75rem 1rem 0 rgba(0, 0, 0, 0.04);
-    min-height: 100%;
-    z-index: 2;
     cursor: grab;
   }
   .pixelated-game-img {
-    line-height: 1.5;
+    position: relative;
+    width: 100%;
+    display: block;
+    padding-bottom: 88.84297520661157%;
     height: 0;
     overflow: hidden;
-    position: relative;
-    padding-bottom: 88.84297520661157%;
-    width: 100%;
+    width: 336.8px;
+    height: 299.38px;
   }
   .pixelated-game-img img {
     display: block;
@@ -718,8 +711,6 @@
     width: 100%;
     border-top-left-radius: 0.75rem;
     border-top-right-radius: 0.75rem;
-    opacity: 1;
-    transition: opacity .3s;
   }
   .pixelated-game-text {
     display: flex;
@@ -729,16 +720,17 @@
     padding: 1.5rem 1rem;
     background-color: #fff;
     border-bottom-left-radius: 0.75rem;
-    border-top-right-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
     text-align: left;
+    box-sizing: border-box;
   }
   .pixelated-game-h4 {
     color: #333;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 1.5rem;
     margin-bottom: 0;
     margin-top: 0;
-    font-family: 'HelveticaNeue';
+    font-family: 'Bold';
     line-height: 1.75rem;
     letter-spacing: 0.21px;
   }
@@ -748,6 +740,7 @@
     line-height: 140%;
     margin: 1rem 0 1.5rem;
     min-height: 4rem;
+    letter-spacing: 0.14px;
     font-family: 'HelveticaNeue';
   }
   .pixelated-game-a {
@@ -756,12 +749,13 @@
     justify-content: space-between;
     width: 100%;
     color: #333;
-    font-family: 'HelveticNeue';
+    font-family: 'Medium';
     font-size: 1rem;
     font-weight: 500;
     line-height: 140%;
     font-style: normal;
     letter-spacing: 0.14px;
+    margin-top: 10.6719px;
   }
   .pixelated-game-a i {
     display: inline-block;
@@ -1027,12 +1021,30 @@
   .shop-buy {
     font-size: 1rem;
   }
+  .pixelated-game {
+    margin-right: 0;
+  }
+  .pixelated-game-img {
+    width: 336.8px;
+    height: 299.38px;
+    padding-bottom: 89.842975%;
+  }
+  .pixelated-game-text {
+    padding: 1.3rem 1rem;
+  }
+  .pixelated-game-a {
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
 }
 @media (max-width: 767px) {
   .shop-arrow {
     display: none;
   }
-  .hotwheels-race-img-2 { 
+  .hotwheels-race-img-tablet { 
+    display: none;
+  }
+  .pixelated-game-img-tablet{
     display: none;
   }
 }
@@ -1099,14 +1111,14 @@
     .hotwheels-race-img {
       display: none;
     }
-    .hotwheels-race-img-2 {
+    .hotwheels-race-img-tablet {
       overflow: hidden;
       position: relative;
       width: 100%;
       height: 0;
       padding-bottom: 88.89468196037538%;
     }
-    .hotwheels-race-img-2 img{
+    .hotwheels-race-img-tablet img{
       display: block;
       min-height: 1px;
       width: 100%;
@@ -1115,6 +1127,29 @@
     }
     .hotwheels-race-text {
       padding: 1.875rem 1.25rem 3.125rem;
+    }
+    .pixelated-game-img {
+      display: none;
+    }
+    .pixelated-game-img-tablet {
+      position: relative;
+      width: 100%;
+      display: block;
+      padding-bottom: 88.84297520661157%;
+      height: 0;
+      overflow: hidden;
+      width: 638.63px;
+      height: 567.17px;
+    }
+    .pixelated-game-img-tablet img {
+      display: block;
+      min-height: 1px;
+      width: 100%;
+      border-top-left-radius: 0.75rem;
+      border-top-right-radius: 0.75rem;
+    }
+    .pixelated-game-text {
+      padding: 1.5rem 1rem;
     }
 }
 @media (max-width: 1023px) {
@@ -1140,6 +1175,9 @@
       display: none;
     }
     .hotwheels-race-laptop-screen {
+      display: none;
+    }
+    .pixelated-game-img-laptop {
       display: none;
     }
 }
@@ -1528,7 +1566,7 @@
         line-height: normal;
       }
       .shop-text {
-        padding: 1.5rem .9375rem 1.25rem;
+        padding: 1.5rem .9375rem 1.45rem;
       }
       .shop-p {
         font-size: 1rem;
@@ -1565,7 +1603,7 @@
         display: flex;
         justify-content: start;
         position: initial;
-        margin-top: 2.8rem;
+        margin-top: 4.3rem;
         list-style: none;
         padding-inline-start: 0px;
         margin-block-end: 0px;
@@ -1577,7 +1615,7 @@
       .permium-btn {
         display: flex;
         justify-content: flex-end;
-        margin-bottom: -1.6125rem;
+        margin-bottom: -2.2125rem;
       }
       .icon--chevron-right-red {
         margin-left: 0.875rem;
@@ -1588,9 +1626,13 @@
       .hotwheels-race{
         display: none;
       }
+      .hotwheels-race-shop  {
+        margin-top: 1rem;
+      }
       .hotwheels-race-laptop-screen {
         width: 100%;
         position: relative;
+        margin-top: 0.8rem;
       }
       .hotwheels-race-img-action {
         position: relative;
@@ -1610,12 +1652,76 @@
         text-align: center;
         flex-flow: column nowrap;
         height: 100%;
-        width: calc(32% + 84px);
+        width: calc(32% + 84px); 
+        /* 38% */
         padding: 0.625rem 2.625rem;
         padding-left: 4.6875rem 
       }
+      .hotwheels-race-h2 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        font-weight: 400;
+        padding: 0.75rem 0 0;
+        color: #292929;
+      }
+      .hotwheels-race-p {
+        line-height: 1.35rem;
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0.14px;
+        margin: 0;
+        color: inherit;
+      }
+      .pixelated-adventures {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.25rem;
+        margin-right: unset;
+      }
+      .pixelated {
+        padding: 2.5rem 4.6875rem;
+      }
+      .pixelated-game {
+        width: unset;
+      }
+      .pixelated-game-img-tablet {
+        display: none;
+      }
+      .pixelated-game-img-laptop {
+        position: relative;
+        width: 100%;
+        display: block;
+        padding-bottom: 89.84297520661157%;
+        height: 0;
+        overflow: hidden;
+      }
+      .pixelated-game-img-laptop img {
+        display: block;
+        min-height: 1px;
+        width: 100%;
+        border-top-left-radius: 0.75rem;
+        border-top-right-radius: 0.75rem;
+      }
+      .pixelated-game-text {
+        margin-top: -1px;
+      }
+      .pixelated-game-h4 {
+        font-size: 1.75rem;
+      }
+      .pixelated-game-a {
+        margin-top: auto;
+        margin-bottom: 2px;
+      }
+      .icon--chevron-right-red  {
+        height: unset;
+        padding-bottom: unset;
+      }
     }
-    
+    @media (max-width: 1439px) {
+      .hotwheels-race-img-shop-laptop-l {
+        display: none;
+      }
+    } 
 @media (min-width: 1440px) {
     .header {
         padding: 0 80px;
@@ -1643,9 +1749,48 @@
     .shop-theme {
       margin-right: -74px;
     }
+
+    .dot:nth-child(3){
+      display: none;
+    }
+    .dot:nth-child(4){
+      display: none;
+    }
+    .hotwheels-race-img-shop-laptop-l {
+      display: none;
+    }
+    .hotwheels-race-img-shop-laptop-l {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+    }
+    .hotwheels-race-img-action img{
+      display: block;
+      min-height: 1px;
+      width: 100%;
+    }
+    .hotwheels-race-laptop-screen {
+      margin-top: -1.15rem;
+    }
+    .hotwheels-race-h2 {
+      font-size: 3rem;
+      line-height: 3.15rem;
+    }
+    .hotwheels-race-text-laptop-screen {
+      padding: 0.625rem 8.1rem 0.625rem 4.6875rem;
+      width: calc(32% + 259.2px);
+    }
+    .pixelated-game-img-laptop {
+      padding-bottom: 89.442975%;
+    }
+     
 }
 @media (min-width: 1920px) {
   .categories-collector-top {
     transform: translateX(0.55%);
+  }
+  .hotwheels-race-h2 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
   }
 }
