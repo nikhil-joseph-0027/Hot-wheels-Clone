@@ -702,8 +702,8 @@
     padding-bottom: 88.84297520661157%;
     height: 0;
     overflow: hidden;
-    width: 336.8px;
-    height: 299.38px;
+    width: 292.8px;
+    height: 260.25px;
   }
   .pixelated-game-img img {
     display: block;
@@ -755,7 +755,6 @@
     line-height: 140%;
     font-style: normal;
     letter-spacing: 0.14px;
-    margin-top: 10.6719px;
   }
   .pixelated-game-a i {
     display: inline-block;
@@ -778,6 +777,200 @@
     justify-content: space-between;
     align-items: center;
   }
+  .best-seller {
+    padding: 2.5rem 1.25rem 1.875rem;
+    margin: 0 auto;
+    max-width: unset;
+    transition: padding;
+    box-sizing: border-box;
+  }
+  .best-seller-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "macho";
+    line-height: 2.4rem;
+    margin-top: 0.125rem;
+  }
+  .best-seller-buy {
+
+    /* display: flex;
+    flex-direction: row;
+    position: relative;
+    
+    touch-action: pan-y;
+    cursor: grab;
+    overflow: visible;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: visible;
+    max-width: 100%; */
+    display: block;
+    overflow: visible;
+    flex-shrink: 0;
+    position: relative;
+    user-select: none;
+    visibility: visible;
+    height: 225.5px;
+    touch-action: pan-y;
+    cursor: grab;
+    margin-right: -20px;
+    }
+  .best-seller-buy-scroll {
+    /* display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transform: translateX(0%);
+    box-sizing: border-box;
+    display: flex;
+    overflow: scroll;
+    scrollbar-width: none;   
+    margin-right: -20px;
+    position: relative;
+    /* height: 478.422px;
+    touch-action: pan-y; */
+    /* left: 0;
+    transform: translateX(0%); */
+    display: flex;
+    left: 0px;
+    transform: translateX(0%);
+    position: absolute;
+    width: 100%;
+    cursor: grab;
+    user-select: none;
+    visibility: visible;
+    overflow-x: scroll;
+    margin-right: -10px;
+    scrollbar-width: none;
+  }
+  .best-seller-buy-collection {
+    /* position: absolute; */
+    left: 0;
+    transform: translateX(0%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: calc(50% - 22px);
+    min-height: 100%;
+    background-color: #fff;
+    border-radius: 1rem;
+    /* overflow: hidden; */
+    border: 2px solid #f5f5f7;
+    box-shadow: 0 8px 16px #0000000a;
+    box-sizing: border-box;
+    cursor: grab;
+    margin-left: 0.5rem;
+  }
+  .best-seller-buy-collection:first-child {
+    margin-left: 0;
+  }
+  .best-seller-buy-collection:last-child {
+    margin-right: 20px;
+  }
+  .best-seller-buy-collection-img {
+    padding: 0;
+    margin-bottom: 0rem;
+    width: 100%;
+    padding-bottom: 100%;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    max-width: none;
+  }
+  .best-seller-buy-collection-img img {
+    width: 141.5px;
+    height: 141.5px;
+    object-fit: contain;
+    display: block;
+    min-height: 1px;
+    opacity: 1;
+    transform: opacity .3s;
+    border-style: none;
+    max-width: none;
+  }
+  .best-seller-wherebuy {
+    padding: 1.5rem 0.625rem 1rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-top: 0;
+    justify-content: space-between;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: grab;
+  }
+  .best-seller-btn {
+    font-size: 0.875rem;
+    padding: 0.90625rem 0.625rem;
+    height: 2.5rem;
+    width: 100%;
+    transform: none;
+    background-color: #facd32;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: #000;
+    font-family: "macho";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.75rem;
+    position: relative;
+    border: 0;
+    align-items: center;
+    border-radius: 1.5625rem;
+    display: inline-flex;
+    justify-content: center;
+    min-width: 7.5rem;
+    white-space: nowrap;
+  }
+  .best-seller-shop-now {
+    margin-top: 2.5rem;
+    display: block;
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    color: #333;
+    align-items: center;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.575rem;
+    font-family: "bold";
+    letter-spacing: -0.372px;
+  }
+  .best-seller-icon {
+    margin-left: 0.625rem;
+    font-size: 0.75rem;
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 1.575rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  .best-seller-icon::before {
+    background-position: 0 -45.25em;
+    width: 0.75em;
+    height: 1.125rem;
+    background-image: url(https://shop.mattel.com/cdn/shop/t/267/assets/sprite-icon-6159b760.svg?v=135442872574015767361750702222);
+    background-repeat: no-repeat;
+    background-size: 7.5em 151.3125em;
+    content: "";
+    display: block;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+
   footer {
     padding: 2.75rem 0.75rem;
     position: relative;
@@ -821,7 +1014,7 @@
     flex-grow: 1;
     border-radius: 0.9375rem;
     box-shadow: 0 .25rem .5rem #0000001a;
-  }
+  }                                                                                                
   .footer-mattel-form-title {
     width: 100%;
     text-align: center;
