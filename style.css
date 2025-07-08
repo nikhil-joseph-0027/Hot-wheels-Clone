@@ -738,7 +738,7 @@
     font-size: 1rem;
     font-weight: 400;
     line-height: 140%;
-    margin: 1rem 0 1.5rem;
+    margin: 1rem 0  2.2rem;
     min-height: 4rem;
     letter-spacing: 0.14px;
     font-family: 'HelveticaNeue';
@@ -941,6 +941,121 @@
   .best-seller-img-mobile-m {
     display: none;
   }
+  .hotwheels-challenge {
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+  }
+  .hotwheels-challenge-img {
+    padding-bottom: 88.89468196037538%;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+  }
+  .hotwheels-challenge-img-mobile {
+    display: block;
+    min-height: 1px;
+    width: 100%;
+    opacity: 1;
+    transition: opacity .3s;
+    border-style: none;
+    max-width: 100%;
+  }
+  .hotwheels-challenge-text {
+    background-color: #1199d5;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: block;
+    padding: 1.125rem 1.25rem 3.125rem;
+    margin: 0 auto;
+    max-width: 1439px;
+    transition: padding .4s ease-in-out;
+    align-items: flex-start;
+  }
+  .hotwheels-challenge-text-img {
+    max-width: 132px;
+    margin-bottom: 0;
+    transform: scale(0.92);
+    transform-origin: top left;
+    box-sizing: border-box;
+    /* padding-bottom: 69.9558764540714%; */
+    /* height: 0; */
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+    display: block;
+  }
+  .hotwheels-challenge-text-img-mobile {
+    display: block;
+    min-height: 1px;
+    width: 100%;
+    opacity: 1;
+    transition: opacity .3s;
+    border-style: none;
+    max-width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+  }
+  .hotwheels-challenge-text-sentence {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.14px;
+    margin: 0;
+    padding: 0.75rem 0 0;
+    font-family: 'HelveticaNeue';
+    display: block;
+    box-sizing: border-box;
+  }
+  .text-sentence-img {
+    color: #fff;
+    border-style: none;
+    max-width: 100%;
+    width: 450px;
+    height: 35px;
+    aspect-ratio: auto 450 / 35;
+  }
+  .hotwheels-challenge-text-sentence-p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.14px;
+    margin: 0;
+    color: #fff;
+    font-family: 'medium';
+  }
+  .hotwheels-challenge-text-btn {
+    margin-top: 1.25rem;
+    background-color: #fff;
+    color: #333;
+    font-family: 'macho';
+    font-size: 1.125rem;
+    width: 18.25rem;
+    padding: 0.0625rem 2.625rem 0.4375rem;
+    height: auto;
+    line-height: 1.5;
+    display: inline-flex;
+    align-items: center;
+    border: 4px solid transparent;
+    cursor: pointer;
+    font-weight: 700;
+    justify-content: center;
+    text-decoration: none;
+    transition: color .2s ease-in-out, font-size .4s ease-in-out, padding .4s ease-in-out;
+    white-space: nowrap;
+    min-width: 7.5rem;
+    box-sizing: border-box;
+    letter-spacing: 0.14px;
+    border-radius: 1.5625rem;
+  }
+
 
   /* footer {
     padding: 2.75rem 0.75rem;
@@ -1225,6 +1340,12 @@
   .best-seller-icon::before {
     height: 0.87rem;
   }
+  .pixelated-game-p {
+    margin: 1rem 0  1.5rem;
+  }
+  .hotwheels-challenge-text-sentence-p {
+    margin-top: -1px;
+  }
   /* .best-seller-heading {
     margin-bottom: 2.5625rem;
     margin-top: 1px;
@@ -1244,6 +1365,9 @@
     display: none;
   }
   .best-seller-arrow-btn {
+    display: none;
+  }
+  .hotwheels-challenge-img-tablet {
     display: none;
   }
 }
@@ -1430,6 +1554,27 @@
     .best-seller-buy {
       height: 274.656px;
     }
+    .hotwheels-challenge-img-mobile {
+      display: none;
+    }
+    .hotwheels-challenge-img {
+      padding-bottom: 88.89468196037538%;
+      height: 0;
+    }
+    .hotwheels-challenge-img-tablet {
+      display: block;
+      min-height: 1px;
+      width: 100%;
+      opacity: 1;
+      transition: opacity .3s;
+      border-style: none;
+      max-width: 100%;
+      text-align: left;
+      box-sizing: border-box;
+    }
+    .hotwheels-challenge-text {
+      padding: 1.875rem 1.25rem 3.125rem;
+    }
 }
 @media (max-width: 1023px) {
     .all-brands-logo3 {
@@ -1462,627 +1607,702 @@
     .best-seller-ol {
       display: none;
     }
+    .hotwheels-challenge-img-laptop {
+      display: none;
+    }
+    .hotwheels-challenge-text-img-laptop {
+      display: none;
+    }
 }
 @media (min-width: 1024px) {
-    .header {
-        display: flex;
-        flex-flow: row nowrap;
-        align-items: center;
-        justify-content: space-between;
-        overflow: hidden;
-        padding: 0 1.25rem;
-        
-    }
-    .header-logo {
-        display: flex;
-        align-items: center;
-        justify-content: unset;
-        flex-grow: 0;
-        box-sizing: border-box;
-    }
-    .header-logo a {
-        letter-spacing: 0.17px;
-    }
-    .mattel-logo, .barbie-logo, .fisher-price-logo, .all-brands-logo {
-        display: flex;
-        align-items: center;
-        -webkit-box-pack: center;
-        justify-content: center;
-        filter: grayscale(1);
-        height: 40px;
-        padding: 0 8px;
-        text-decoration: none;
-    }
-    .hot-wheels-logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 40px;
-        padding: 0 8px;
-    }
-    .hot-wheels-logo svg {
-        width: 70px;
-        height: 20px;
-        fill: none;
-    }
-    .fisher-price-logo svg {
-        width: 52px;
-        height: 20px;
-        fill: none;
-    }
-    .all-brands-logo2 {
-        letter-spacing: 0.17px;
-    }
-    .all-brands-logo3 svg {
-        width: 16px;
-        height: 16px;
-        fill: none;
-        margin-top: 3px;
-    }
-    .empty-div {
-        display: block;
-        color: rgb(51, 51, 51);
-        flex: 1;
-        padding: 0 30px;
-    }
-    .header-ul-list {
-        -webkit-box-align: center;
-        align-items: center;
-        padding: 0;
-        padding-top: 0.3125rem;
-        display: flex;
-        flex-wrap: nowrap;
-    }
-    .country-ul {
-        display: block;
-        list-style-position: outside;
-        box-sizing: border-box;
-    }
-    .country-btn {
-        margin-top: -2px;
-        background-color: transparent;
-        border: 0;
-        padding: 0;
-    }
-    .country-img {
-        display: inline-block;
-        margin: 0px 0rem 0 0;
-        vertical-align: middle;
-        width: 1.75rem;
-        overflow: hidden;
-        position: relative;
-        box-sizing: border-box;
-        cursor: pointer;
-        margin: 0 0.175rem 0 0;
-    }
-    .country-img img {
-        display: block;
-        min-height: 1px;
-        width: 100%;
-        max-width: 100%;
-        border-style: none;
-    }
-    .country-text {
-        text-decoration: underline;
-        cursor: pointer;
-        color: #333;
-        font-size: 0.875rem;
-        font-weight: 400;
-        line-height: 1.5;
-        letter-spacing: 0.14px;
-        list-style: none;
-        font-family: 'HelveticaNeue';
-    }
-    .header-collectors {
-        display: inline-block;
-        margin-left: 1.75rem;
-        padding: 0;
-        transform: translateY(-1px);
-        box-sizing: border-box;
-        font-family: 'HelveticaNeue';
-    }
-    .header-collectors-a {
-        font-size: 0.875rem;
-        font-weight: 400;
-        line-height: 1.14;
-        letter-spacing: 0.12px;
-        color: #333;
-        text-decoration: none;
-        list-style: none;
-        box-sizing: border-box;
-        font-family: 'HelveticaNeue';
-    }
-    .header-sign-in {
-        display: inline-block;
-        margin-left: 1.75rem;
-        padding: 0;
-        transform: translateY(-1px);
-        box-sizing: border-box;
-        padding-bottom: 0;
-        position: relative;
-        box-sizing: border-box;
-    }
-    .sign-in-btn {
-        cursor: pointer;
-        font-size: 0.875rem;
-        line-height: 1.14;
-        letter-spacing: 0.12px;
-        -webkit-box-align: center;
-        appearance: none;
-        background: 0 0;
-        border: 0;
-        display: flex;
-        margin: 0;
-        padding: 0;
-        color: #333;
-        font-weight: 700;
-        text-decoration: none;
-        overflow: visible;
-        align-items: center;
-    }
-    .icon--account {
-        font-size: 0.96875rem;
-        transform: translateY(1px);
-        margin: 0 0.3125rem 0.28125rem 0;
-        display: inline-block;
-        box-sizing: border-box;
-        line-height: 1.14rem;
-        letter-spacing: 0.12px;
-    }
-    .icon--account::before {
-        background: 0 0;
-        width: 1.375em;
-        height: 1.375em;
-        background-image: url(https://shop.mattel.com/cdn/shop/t/264/assets/sprite-icon-6159b760.svg?v=135442872574015767361747937373);
-        background-repeat: no-repeat;
-        background-size: 7.5em 151.3125em;
-        content: "";
-        display: block;
-        font-size: 1em;
-    }
-    .sign-in-text {
-        font-size: 0.875rem;
-        letter-spacing: 0.12px;
-        line-height: 1;
-        cursor: pointer;
-        font-weight: 700;
-        font-family: "bold";
-    }
-    .icon--chevron-down-red {
-        margin: 0 0 0 0.3125rem;
-        display: inline-block;
-        box-sizing: border-box;
-        transform: translateY(-1px);
-        cursor: pointer;
-        font-size: 0.875rem;
-        line-height: 1.14;
-        letter-spacing: 0.12px;
-        font-weight: 700;
-    }
-    .icon--chevron-down-red::before {
-        background: 0 0;
-        width: 1em;
-        height: 0.625em;
-        background-image: url(https://shop.mattel.com/cdn/shop/t/264/assets/sprite-icon-6159b760.svg?v=135442872574015767361747937373);
-        background-repeat: no-repeat;
-        background-size: 7.5em 151.3125em;
-        content: "";
-        display: block;
-        font-size: 1em;
-        line-height: 1.14rem;
-        letter-spacing: 0.12px;
-        background-position: 0 -39.375em;
-    }
-    .hot-wheels-search-top {
-        display: flex;
-        max-width: none;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        min-height: 5rem;
-        position: relative;
-        box-sizing: border-box;
-    }
-    .hot-wheels-menu {
-        display: none;
-    }
-    .hot-wheels-shop {
-        display: flex;
-        align-items: center;
-        column-gap: 1.5rem;
-        padding: 0.3125rem 0 0;
-        margin: 0;
-        list-style: none;
-        letter-spacing: 0.18px;
-        width: 100%;
-      }
-      .hot-wheels-shop-btn {
-        margin-right: auto;
-        margin-left: 2.5rem;
-        order: -1;
-        flex-shrink: 0;
-        overflow: hidden;
-        padding: 0;
-      }
-      .hot-wheels-shop-btn2 {
-        border-radius: 6.25rem;
-        background: #00000026;
-        padding:  0.75rem 1rem 0.625rem;
-        width: fit-content;
-        line-height: 1rem;
-        font-size: 1rem;
-        height: 2.5rem;
-        cursor: pointer;
-        border: 0;
-        font-weight: 700;
-        color: #fff;
-        font-family: "bold";
-        letter-spacing: .16px;
-      }
-      .hotwheels-race-img{
-        display: none;
-    }
-      .icon--chevron-down-serif-red {
-        display: inline-block;
-        margin-right: 0;
-        letter-spacing: 0.16px;
-        font-weight: 700;
-        text-align: left;
-        line-height: 1rem;
-        text-transform: none;
-        font-family: "bold";
-        font-size: 1rem;
-        cursor: pointer;
-        padding-left: 1px;
-      }
-      .icon--chevron-down-serif-red::before {
-        background-image: url(https://cdn.optimizely.com/img/627150995/9c028636ec304161875cc9220937ab11.svgz);
-        background-position: unset;
-        background-size: cover;
-        margin-bottom: 3px;
-        width: 0.875rem;
-        height: 0.625rem;
-        font-size: 1em;
-        content: "";
-        display: block;
-        margin-left: -1px;
-      }
-      .hot-wheels-truck {
-        color: #fff;
-        font-weight: 700;
-        font-size: 1rem;
-        line-height: normal;
-        text-decoration: none;
-        letter-spacing: 0.17px;
-        background-color: transparent;
-        box-sizing: border-box;
-        list-style: none;
-        box-sizing: border-box;
-        font-family: "bold";
-      }
-      .empty-div-2 {
-        backface-visibility: hidden;
-        padding-left: 1.875rem;
-        z-index: 3;
-        box-sizing: border-box;
-      }
-      .hot-wheels-search {
-        padding: 0;
-        padding-left: .9375rem;
-        flex: 0;
-      }
-      .icon--search::before {
-        height: 24px;
-        width: 24px;
-      }
-      .hot-wheels-search-input {
-        height: 46px;
-        padding: .9375rem 3.8375rem .625rem 14px;
-        padding-left: 20px;
-        width: 28vw;
-        max-width: 31.5rem;
-        background: #fafafa;
-        font-size: 1rem;
-        line-height: 1.5;
-        border: 1px solid #dcdcdc;
-        border-radius: 1.875rem;
-      }
-      .hot-wheels-search-input::placeholder {
-        font-size: 1rem;
-        line-height: 1.5;
-      }
-      .hot-wheels-search-img {
-        margin-right: unset;
-      }
-      .hot-wheels-search-input-btn {
-        right: 16px;
-      }
-      .categories-dot {
-        display: none;
-      }
-      .categories-shop-top {
-        padding: 2.5rem;
-        background-size: cover;
-      }
-      .categories-shop {
-        margin-left: 2rem;
-        margin-right: 2rem;
-      }
-      .categories-text {
-        font-size: 3.125rem;
-        letter-spacing: 0.02156rem;
-        margin-bottom: 32px;
-      }
-      .categories-collector {
-        justify-content: center;
-        column-gap: 1.25rem;
-        margin-right: 0;
-        margin-top: -1px;
-        height: 197.203px;
-    }
-      .categories-toy {
-        width: calc((100% / 6) - (100px / 6));
-        max-width: 11.25rem;
-      }
-      #construction-img {
-        transform: rotate3d(180);
-      }
-      #construction-car {
-        display: none;
-      }
-       .shop-container {
-        margin: 0 1.25rem;
-      }
-      .shop-header-2 {
-        font-size: 2.5rem;
-        line-height: 3rem;
-      }
-      .shop-btn-premium {
-        padding: 0.5rem 1rem 0.25rem;
-        height: 2.5rem;
-        line-height: normal;
-      }
-      .shop-btn-racing {
-        padding: 0.5rem 1rem 0.25rem;
-        height: 2.5rem;
-        line-height: normal;
-      }
-      .shop-text {
-        padding: 1.5rem .9375rem 1.45rem;
-      }
-      .shop-p {
-        font-size: 1rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 140%;
-        text-align: center;
-        padding-bottom: 1.4375rem;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        -webkit-box-orient: vertical;
-        padding: 0 0.375rem;
-        letter-spacing: 0.17px;
-      }
-      .shop-buy {
-        margin-top: 1.4375rem;
-        font-size: 1.125rem;
-        line-height: 1.75rem;
-        height: 3.125rem;
-        padding: .5625rem .3125rem;
-        width: 100%;
-      }
-      .shop-permium {
-        box-shadow: 0 8px 16px #0000000a;
-      }
-      .shop-permium-vehicles {
-        margin-left: 1.25rem;
-        width: 19.1875rem;
-        box-shadow: 0 8px 16px #0000000a;
-      }
-      .shop-dot {
-        display: flex;
-        justify-content: start;
-        position: initial;
-        margin-top: 4.3rem;
-        list-style: none;
-        padding-inline-start: 0px;
-        margin-block-end: 0px;
-      }
-      .shop-dot-permium {
-        display: flex;
-        align-items: center;
-      }
-      .permium-btn {
-        display: flex;
-        justify-content: flex-end;
-        margin-bottom: -2.2125rem;
-      }
-      .icon--chevron-right-red {
-        margin-left: 0.875rem;
-        padding-bottom: 0.375rem;
-        height: 1.425rem;
-        overflow: hidden;
-      }
-      .hotwheels-race{
-        display: none;
-      }
-      .hotwheels-race-shop  {
-        margin-top: 1rem;
-      }
-      .hotwheels-race-laptop-screen {
-        width: 100%;
-        position: relative;
-        margin-top: 0.8rem;
-      }
-      .hotwheels-race-img-action {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-      }
-      .hotwheels-race-img-action img{
-        display: block;
-        min-height: 1px;
-        width: 100%;
-      }
-      .hotwheels-race-text-laptop-screen {
-        position: absolute;
-        z-index: 99;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        flex-flow: column nowrap;
-        height: 100%;
-        width: calc(32% + 84px); 
-        /* 38% */
-        padding: 0.625rem 2.625rem;
-        padding-left: 4.6875rem 
-      }
-      .hotwheels-race-h2 {
-        font-size: 2.5rem;
-        line-height: 2.5rem;
-        font-weight: 400;
-        padding: 0.75rem 0 0;
-        color: #292929;
-      }
-      .hotwheels-race-p {
-        line-height: 1.35rem;
-        font-size: 1rem;
-        font-weight: 500;
-        letter-spacing: 0.14px;
-        margin: 0;
-        color: inherit;
-      }
-      .pixelated-adventures {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 1.25rem;
-        margin-right: unset;
-      }
-      .pixelated {
-        padding: 2.5rem 4.6875rem;
-      }
-      .pixelated-game {
-        width: unset;
-      }
-      .pixelated-game-img-tablet {
-        display: none;
-      }
-      .pixelated-game-img-laptop {
-        position: relative;
-        width: 100%;
-        display: block;
-        padding-bottom: 89.84297520661157%;
-        height: 0;
-        overflow: hidden;
-      }
-      .pixelated-game-img-laptop img {
-        display: block;
-        min-height: 1px;
-        width: 100%;
-        border-top-left-radius: 0.75rem;
-        border-top-right-radius: 0.75rem;
-      }
-      .pixelated-game-text {
-        margin-top: -1.7px;
-      }
-      .pixelated-game-h4 {
-        font-size: 1.75rem;
-        letter-spacing: 0.24px;
-        line-height: 1.75rem;
-      }
-      .pixelated-game-a {
-        margin-top: auto;
-        margin-bottom: 0px;
-      }
-      .icon--chevron-right-red  {
-        height: unset;
-        padding-bottom: unset;
-      }
-      .best-seller-ol {
-        display: flex;
-        justify-content: start;
-        position: initial;
-        margin-top: 2.5rem;
-        padding: 0;
-        width: 100%;
-        list-style: none;
-      }
-      .best-seller-li {
-        border-radius: 3.125rem;
-        width: 2.5625rem;
-        margin: 0 0.3125rem;
-        height: 0.375rem;
-        margin-left: 0;
-        background-color: #ee0024;
-        transition: 0.4s ease-in;
-        cursor: pointer;
-      }
-      .best-seller-dot {
-        margin: 0 0.3125rem;
-        width: 0.375rem;
-        height: 0.375rem;
-        background-color: #ee0024;
-        border-radius: 100%;
-        transition: 0.4s ease-in;
-        cursor: pointer;
-      }
-      .best-seller-shop-now {
-        position: absolute;
-        right: 0;
-        bottom: -0.375rem;
-        padding-top: 0;
-        justify-content: flex-end;
-        margin-right: 20px;
-      }
-      .best-seller-img-tablet {
-        height: 168px;
-        width: 168px;
-      }
-      .best-seller-buy {
-        margin-right: -5.5rem;
-      }
-      .best-seller {
-        margin: 0 4.5rem;
-        padding: 5rem 0 4.375rem;
-      }
-      .best-seller-head {
-        font-size: 2.5rem;
-        text-wrap: nowrap;
-        line-height: 3rem;
-        color: #333;
-      }
-      .best-seller-wherebuy {
-        padding: 1.5rem 0.9375rem 1.25rem;
-        padding-bottom: 1.5rem;
-      }
-      .best-seller-btn {
-        width: 100%;
-        transform: none;
-        background-color: #facd32;
-        margin-bottom: 0;
-        margin-top: 0;
-        padding: 0.5625rem 0.3125rem;
-        height: 3.125rem;
-        color: #000;
-        font-weight: 700;
-        line-height: 1.75rem;
-        position: relative;
-        border: 0;
-        min-width: 9.5rem;
-        margin-right: -15px;
-      }
-      .best-seller-buy-collection {
-        width: calc(25% - 48px);
-        margin-left: 1.25rem;
-      }
-    }
-    @media (max-width: 1439px) {
-      .hotwheels-race-img-shop-laptop-l {
-        display: none;
-      }
-    } 
+.header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 0 1.25rem;
+    
+}
+.header-logo {
+    display: flex;
+    align-items: center;
+    justify-content: unset;
+    flex-grow: 0;
+    box-sizing: border-box;
+}
+.header-logo a {
+    letter-spacing: 0.17px;
+}
+.mattel-logo, .barbie-logo, .fisher-price-logo, .all-brands-logo {
+    display: flex;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    filter: grayscale(1);
+    height: 40px;
+    padding: 0 8px;
+    text-decoration: none;
+}
+.hot-wheels-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 8px;
+}
+.hot-wheels-logo svg {
+    width: 70px;
+    height: 20px;
+    fill: none;
+}
+.fisher-price-logo svg {
+    width: 52px;
+    height: 20px;
+    fill: none;
+}
+.all-brands-logo2 {
+    letter-spacing: 0.17px;
+}
+.all-brands-logo3 svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    margin-top: 3px;
+}
+.empty-div {
+    display: block;
+    color: rgb(51, 51, 51);
+    flex: 1;
+    padding: 0 30px;
+}
+.header-ul-list {
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 0;
+    padding-top: 0.3125rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.country-ul {
+    display: block;
+    list-style-position: outside;
+    box-sizing: border-box;
+}
+.country-btn {
+    margin-top: -2px;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+.country-img {
+    display: inline-block;
+    margin: 0px 0rem 0 0;
+    vertical-align: middle;
+    width: 1.75rem;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 0 0.175rem 0 0;
+}
+.country-img img {
+    display: block;
+    min-height: 1px;
+    width: 100%;
+    max-width: 100%;
+    border-style: none;
+}
+.country-text {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #333;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.14px;
+    list-style: none;
+    font-family: 'HelveticaNeue';
+}
+.header-collectors {
+    display: inline-block;
+    margin-left: 1.75rem;
+    padding: 0;
+    transform: translateY(-1px);
+    box-sizing: border-box;
+    font-family: 'HelveticaNeue';
+}
+.header-collectors-a {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0.12px;
+    color: #333;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'HelveticaNeue';
+}
+.header-sign-in {
+    display: inline-block;
+    margin-left: 1.75rem;
+    padding: 0;
+    transform: translateY(-1px);
+    box-sizing: border-box;
+    padding-bottom: 0;
+    position: relative;
+    box-sizing: border-box;
+}
+.sign-in-btn {
+    cursor: pointer;
+    font-size: 0.875rem;
+    line-height: 1.14;
+    letter-spacing: 0.12px;
+    -webkit-box-align: center;
+    appearance: none;
+    background: 0 0;
+    border: 0;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-weight: 700;
+    text-decoration: none;
+    overflow: visible;
+    align-items: center;
+}
+.icon--account {
+    font-size: 0.96875rem;
+    transform: translateY(1px);
+    margin: 0 0.3125rem 0.28125rem 0;
+    display: inline-block;
+    box-sizing: border-box;
+    line-height: 1.14rem;
+    letter-spacing: 0.12px;
+}
+.icon--account::before {
+    background: 0 0;
+    width: 1.375em;
+    height: 1.375em;
+    background-image: url(https://shop.mattel.com/cdn/shop/t/264/assets/sprite-icon-6159b760.svg?v=135442872574015767361747937373);
+    background-repeat: no-repeat;
+    background-size: 7.5em 151.3125em;
+    content: "";
+    display: block;
+    font-size: 1em;
+}
+.sign-in-text {
+    font-size: 0.875rem;
+    letter-spacing: 0.12px;
+    line-height: 1;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: "bold";
+}
+.icon--chevron-down-red {
+    margin: 0 0 0 0.3125rem;
+    display: inline-block;
+    box-sizing: border-box;
+    transform: translateY(-1px);
+    cursor: pointer;
+    font-size: 0.875rem;
+    line-height: 1.14;
+    letter-spacing: 0.12px;
+    font-weight: 700;
+}
+.icon--chevron-down-red::before {
+    background: 0 0;
+    width: 1em;
+    height: 0.625em;
+    background-image: url(https://shop.mattel.com/cdn/shop/t/264/assets/sprite-icon-6159b760.svg?v=135442872574015767361747937373);
+    background-repeat: no-repeat;
+    background-size: 7.5em 151.3125em;
+    content: "";
+    display: block;
+    font-size: 1em;
+    line-height: 1.14rem;
+    letter-spacing: 0.12px;
+    background-position: 0 -39.375em;
+}
+.hot-wheels-search-top {
+    display: flex;
+    max-width: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-height: 5rem;
+    position: relative;
+    box-sizing: border-box;
+}
+.hot-wheels-menu {
+    display: none;
+}
+.hot-wheels-shop {
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+    padding: 0.3125rem 0 0;
+    margin: 0;
+    list-style: none;
+    letter-spacing: 0.18px;
+    width: 100%;
+  }
+  .hot-wheels-shop-btn {
+    margin-right: auto;
+    margin-left: 2.5rem;
+    order: -1;
+    flex-shrink: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+  .hot-wheels-shop-btn2 {
+    border-radius: 6.25rem;
+    background: #00000026;
+    padding:  0.75rem 1rem 0.625rem;
+    width: fit-content;
+    line-height: 1rem;
+    font-size: 1rem;
+    height: 2.5rem;
+    cursor: pointer;
+    border: 0;
+    font-weight: 700;
+    color: #fff;
+    font-family: "bold";
+    letter-spacing: .16px;
+  }
+  .hotwheels-race-img{
+    display: none;
+}
+  .icon--chevron-down-serif-red {
+    display: inline-block;
+    margin-right: 0;
+    letter-spacing: 0.16px;
+    font-weight: 700;
+    text-align: left;
+    line-height: 1rem;
+    text-transform: none;
+    font-family: "bold";
+    font-size: 1rem;
+    cursor: pointer;
+    padding-left: 1px;
+  }
+  .icon--chevron-down-serif-red::before {
+    background-image: url(https://cdn.optimizely.com/img/627150995/9c028636ec304161875cc9220937ab11.svgz);
+    background-position: unset;
+    background-size: cover;
+    margin-bottom: 3px;
+    width: 0.875rem;
+    height: 0.625rem;
+    font-size: 1em;
+    content: "";
+    display: block;
+    margin-left: -1px;
+  }
+  .hot-wheels-truck {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: normal;
+    text-decoration: none;
+    letter-spacing: 0.17px;
+    background-color: transparent;
+    box-sizing: border-box;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "bold";
+  }
+  .empty-div-2 {
+    backface-visibility: hidden;
+    padding-left: 1.875rem;
+    z-index: 3;
+    box-sizing: border-box;
+  }
+  .hot-wheels-search {
+    padding: 0;
+    padding-left: .9375rem;
+    flex: 0;
+  }
+  .icon--search::before {
+    height: 24px;
+    width: 24px;
+  }
+  .hot-wheels-search-input {
+    height: 46px;
+    padding: .9375rem 3.8375rem .625rem 14px;
+    padding-left: 20px;
+    width: 28vw;
+    max-width: 31.5rem;
+    background: #fafafa;
+    font-size: 1rem;
+    line-height: 1.5;
+    border: 1px solid #dcdcdc;
+    border-radius: 1.875rem;
+  }
+  .hot-wheels-search-input::placeholder {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .hot-wheels-search-img {
+    margin-right: unset;
+  }
+  .hot-wheels-search-input-btn {
+    right: 16px;
+  }
+  .categories-dot {
+    display: none;
+  }
+  .categories-shop-top {
+    padding: 2.5rem;
+    background-size: cover;
+  }
+  .categories-shop {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .categories-text {
+    font-size: 3.125rem;
+    letter-spacing: 0.02156rem;
+    margin-bottom: 32px;
+  }
+  .categories-collector {
+    justify-content: center;
+    column-gap: 1.25rem;
+    margin-right: 0;
+    margin-top: -1px;
+    height: 197.203px;
+}
+  .categories-toy {
+    width: calc((100% / 6) - (100px / 6));
+    max-width: 11.25rem;
+  }
+  #construction-img {
+    transform: rotate3d(180);
+  }
+  #construction-car {
+    display: none;
+  }
+    .shop-container {
+    margin: 0 1.25rem;
+  }
+  .shop-header-2 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+  .shop-btn-premium {
+    padding: 0.5rem 1rem 0.25rem;
+    height: 2.5rem;
+    line-height: normal;
+  }
+  .shop-btn-racing {
+    padding: 0.5rem 1rem 0.25rem;
+    height: 2.5rem;
+    line-height: normal;
+  }
+  .shop-text {
+    padding: 1.5rem .9375rem 1.45rem;
+  }
+  .shop-p {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    text-align: center;
+    padding-bottom: 1.4375rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    padding: 0 0.375rem;
+    letter-spacing: 0.17px;
+  }
+  .shop-buy {
+    margin-top: 1.4375rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    height: 3.125rem;
+    padding: .5625rem .3125rem;
+    width: 100%;
+  }
+  .shop-permium {
+    box-shadow: 0 8px 16px #0000000a;
+  }
+  .shop-permium-vehicles {
+    margin-left: 1.25rem;
+    width: 19.1875rem;
+    box-shadow: 0 8px 16px #0000000a;
+  }
+  .shop-dot {
+    display: flex;
+    justify-content: start;
+    position: initial;
+    margin-top: 4.3rem;
+    list-style: none;
+    padding-inline-start: 0px;
+    margin-block-end: 0px;
+  }
+  .shop-dot-permium {
+    display: flex;
+    align-items: center;
+  }
+  .permium-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: -2.2125rem;
+  }
+  .icon--chevron-right-red {
+    margin-left: 0.875rem;
+    padding-bottom: 0.375rem;
+    height: 1.425rem;
+    overflow: hidden;
+  }
+  .hotwheels-race{
+    display: none;
+  }
+  .hotwheels-race-shop  {
+    margin-top: 1rem;
+  }
+  .hotwheels-race-laptop-screen {
+    width: 100%;
+    position: relative;
+    margin-top: 0.8rem;
+  }
+  .hotwheels-race-img-action {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  .hotwheels-race-img-action img{
+    display: block;
+    min-height: 1px;
+    width: 100%;
+  }
+  .hotwheels-race-text-laptop-screen {
+    position: absolute;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column nowrap;
+    height: 100%;
+    width: calc(32% + 84px); 
+    /* 38% */
+    padding: 0.625rem 2.625rem;
+    padding-left: 4.6875rem 
+  }
+  .hotwheels-race-h2 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    padding: 0.75rem 0 0;
+    color: #292929;
+  }
+  .hotwheels-race-p {
+    line-height: 1.35rem;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.14px;
+    margin: 0;
+    color: inherit;
+  }
+  .pixelated-adventures {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.25rem;
+    margin-right: unset;
+  }
+  .pixelated {
+    padding: 2.5rem 4.6875rem;
+  }
+  .pixelated-game {
+    width: unset;
+  }
+  .pixelated-game-img-tablet {
+    display: none;
+  }
+  .pixelated-game-img-laptop {
+    position: relative;
+    width: 100%;
+    display: block;
+    padding-bottom: 89.84297520661157%;
+    height: 0;
+    overflow: hidden;
+  }
+  .pixelated-game-img-laptop img {
+    display: block;
+    min-height: 1px;
+    width: 100%;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+  }
+  .pixelated-game-text {
+    margin-top: -1.7px;
+  }
+  .pixelated-game-h4 {
+    font-size: 1.75rem;
+    letter-spacing: 0.24px;
+    line-height: 1.75rem;
+  }
+  .pixelated-game-a {
+    margin-top: auto;
+    margin-bottom: 0px;
+  }
+  .icon--chevron-right-red  {
+    height: unset;
+    padding-bottom: unset;
+  }
+  .best-seller-ol {
+    display: flex;
+    justify-content: start;
+    position: initial;
+    margin-top: 2.2rem;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+  }
+  .best-seller-li {
+    border-radius: 3.125rem;
+    width: 2.5625rem;
+    margin: 0 0.3125rem;
+    height: 0.375rem;
+    margin-left: 0;
+    background-color: #ee0024;
+    transition: 0.4s ease-in;
+    cursor: pointer;
+  }
+  .best-seller-dot {
+    margin: 0 0.3125rem;
+    width: 0.375rem;
+    height: 0.375rem;
+    background-color: #ee0024;
+    border-radius: 100%;
+    transition: 0.4s ease-in;
+    cursor: pointer;
+  }
+  .best-seller-shop-now {
+    position: absolute;
+    right: 5.1%;
+    margin-top: -1.25rem;
+    padding-top: 0;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+  .best-seller-icon {
+    padding-bottom: 0.4rem;
+  }
+  .best-seller-img-tablet {
+    height: 168px;
+    width: 168px;
+  }
+  .best-seller-buy {
+    margin-right: -5.5rem;
+  }
+  .best-seller {
+    margin: 0 4.5rem;
+    padding: 5.25rem 0 4.375rem;
+  }
+  .best-seller-head {
+    font-size: 2.5rem;
+    text-wrap: nowrap;
+    line-height: 3rem;
+    color: #333;
+    margin-top: 0.185rem;
+  }
+  .best-seller-wherebuy {
+    padding: 1.5rem 0.9375rem 1.25rem;
+    padding-bottom: 1.5rem;
+  }
+  .best-seller-btn {
+    width: 100%;
+    transform: none;
+    background-color: #facd32;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding: 0.5625rem 0.3125rem;
+    height: 3.125rem;
+    color: #000;
+    font-weight: 700;
+    line-height: 1.75rem;
+    position: relative;
+    border: 0;
+    min-width: 9.5rem;
+    margin-right: -15px;
+    font-size: 1.125rem;
+  }
+  .best-seller-buy-collection {
+    width: calc(25% - 48px);
+    margin-left: 1.25rem;
+  }
+  .best-seller-heading {
+    margin-bottom: 2.460rem;
+  }
+  .best-seller-arrow-btn {
+    margin-top: -1px;
+  }
+  .hotwheels-challenge-img-tablet {
+    display: none;
+  }
+  .hotwheels-challenge {
+    position: relative;
+  }
+  .hotwheels-challenge-img {
+    position: relative;
+    padding-bottom: 31.25%;
+  }
+  .hotwheels-challenge-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+      z-index: 2;
+      display: flex;
+      flex-flow: column;
+      width: calc(32% + 84px);
+      padding: 0.625rem 2.625rem;
+      padding-left: 4.6875rem;
+      text-align: left;
+      margin-left: 0;
+      margin-top: 3px;
+  }
+  .hotwheels-challenge-text-img {
+    max-width: 200px;
+    transform: scale(0.75);
+        /* padding-bottom: 69.9558764540714%; */
+/* height: 0; */
+  }
+  .hotwheels-challenge-text-img-mobile {
+    display: none;
+  }
+  .hotwheels-challenge-text-img-laptop {
+    display: block;
+    min-height: 1px;
+    width: 100%;
+    opacity: 1;
+    transition: opacity .3s;
+    border-style: none;
+    max-width: 100%;
+    width: 132px;
+    height: 92.40px;
+  }
+  .text-sentence-img {
+    line-height: 1.35rem;
+  }
+  .hotwheels-challenge-text-sentence-p {
+    line-height: 1.35rem;
+  }
+  .hotwheels-challenge-text-btn {
+    margin-top: 1rem;
+    min-width: 9.5rem;
+  }                         
+}
+@media (max-width: 1439px) {
+  .hotwheels-race-img-shop-laptop-l {
+    display: none;
+  }
+  .hotwheels-challenge-img-laptop-l {
+    display: none;
+  }
+} 
 @media (min-width: 1440px) {
     .header {
         padding: 0 80px;
@@ -2144,7 +2364,51 @@
     .pixelated-game-img-laptop {
       padding-bottom: 89.442975%;
     }
-     
+    .pixelated-game-text {
+      margin-top: -2px;
+    }
+     .best-seller-img-tablet {
+      width: 272px;
+      height: 272px;
+     }
+     .best-seller-buy {
+      height: 374px;
+     }
+     .best-seller-ol {
+      margin-top: 2.5rem;
+     }
+     .best-seller-shop-now {
+      right: 5%;
+      bottom: 4rem;
+      margin-right: 0;
+     }
+     .best-seller-icon {
+      padding-bottom: 0.498rem;
+     }
+     .hotwheels-challenge-img-laptop {
+      display: none;
+     }
+     .hotwheels-challenge-img-laptop-l {
+      display: block;
+      min-height: 1px;
+      width: 100%;
+      opacity: 1;
+      transition: opactiy .3s;
+      border-style: none;
+      max-width: 100%;
+     }
+     .hotwheels-challenge-text {
+      padding: 0.625rem 8.1rem 0.625rem 4.6875rem;
+      width: calc(32% + 259.2px);
+      display: flex;
+      align-items: flex-start;
+      height: 100%;
+      justify-content: center;
+     }
+     .hotwheels-challenge-text-img-laptop {
+      width: 176px;
+      height: 123.2px;
+     }
 }
 @media (min-width: 1920px) {
   .categories-collector-top {
@@ -2153,5 +2417,21 @@
   .hotwheels-race-h2 {
     font-size: 3.5rem;
     line-height: 3.5rem;
+  }
+  .best-seller-img-tablet {
+    width: 388.25px;
+    height: 388.25px;
+  }
+  .best-seller-buy {
+    height: 490.25px;
+  }
+  .best-seller-shop-now {
+    right: 3.8%;
+   }
+   .pixelated-game-text {
+    margin-top: -4px;
+  }
+  .best-seller {
+    padding: 5.15rem 0 4.375rem;
   }
 }
