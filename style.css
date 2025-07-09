@@ -592,6 +592,7 @@
     display: block;
     text-decoration: none;
     position: relative;
+    display: none; /* unwanted */
   }
   .hotwheels-race-img {
     overflow: hidden;
@@ -663,7 +664,7 @@
     white-space: nowrap;
   }
   .pixelated {
-    padding: 2.5rem 1.25rem 5rem;
+    /* padding: 2.5rem 1.25rem 5rem; */ padding: 2.5rem 1.25rem 6.05rem; /* unwanted */
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -1030,6 +1031,7 @@
     margin: 0;
     color: #fff;
     font-family: 'medium';
+    margin-top: -1px;
   }
   .hotwheels-challenge-text-btn {
     margin-top: 1.25rem;
@@ -1054,6 +1056,119 @@
     box-sizing: border-box;
     letter-spacing: 0.14px;
     border-radius: 1.5625rem;
+  }
+  .hotwheels-formula {
+    background-color: #fff;
+    margin: 0 auto;
+    position: relative;
+    padding: 2.5rem 1.25rem 5rem;
+    display: flex;
+    flex-direction: row;
+    overflow: visible;
+    max-width: 100%;
+  }
+  .hotwheels-formula-f1 {
+    display: flex;
+    overflow: scroll;
+    /* column-gap: 1.25rem; */
+    scrollbar-width: none;
+    margin-right: -20px;
+    position: relative;
+    left: 0;
+    transform: translate(0%);
+  }
+  .hotwheels-formula-offical {
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    transform: translateX(0%);
+    margin-bottom: 0;
+    margin-right: 1.25rem;
+    width: 88%;
+    border-radius: 0.75rem;
+    border: 0.0625rem solid rgba(14, 14, 14, 0.1);
+    box-shadow: 0 0.75rem 1rem 0 rgba(0, 0, 0, 0.04);
+    min-height: 100%;
+    z-index: 2;
+    box-sizing: border-box;
+    cursor: grab;
+  }
+  .hotwheels-formula-offical-img {
+    display: block;
+    /* padding: 88.84297520661157%; */
+    position: relative;
+    box-sizing: border-box;
+    width: 292.8px;
+    height: 260.03px;
+  }
+  .hotwheels-formula-offical-img-mobile {
+    display: block;
+    min-height: 1px;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    opacity: 1;
+    transition: opactiy .3s;
+    border-style: none;
+    max-width: 100%;
+  }
+  .hotwheels-formula-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: 100%;
+    padding: 1.5rem 1rem;
+    background-color: #fff;
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+    text-align: left;
+    box-sizing: border-box;
+  }
+  .hotwheels-formula-text-h4 {
+    color: #333;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-family: 'Bold';
+    line-height: 1.75rem;
+    letter-spacing: 0.21px;
+  }
+  .hotwheels-formula-text-p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 140%;
+    margin: 1rem 0 1.5rem;
+    min-height: 4rem;
+    letter-spacing: 0.14px;
+    font-family: 'HelveticaNeue';
+  }
+  .hotwheels-formula-text-a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    color: #333;
+    font-family: 'Medium';
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 140%;
+    font-style: normal;
+    letter-spacing: 0.14px;
+    margin-top: auto;
+  }
+  .hotwheels-formula-text-i {
+    display: inline-block;
+  }
+  .hotwheels-formula-text-i::before {
+    width: 0.75em;
+    height: 1.125em;
+    background-position: 0 -45.25em;
+    display: block;
+    content: "";
+    background-image: url(https://shop.mattel.com/cdn/shop/t/267/assets/sprite-icon-6159b760.svg?v=135442872574015767361750702222);
+    background-repeat: no-repeat;
+    background-size: 7.5em 151.3125em;
+    font-size: 1em;
   }
 
 
@@ -2112,7 +2227,7 @@
     margin-right: unset;
   }
   .pixelated {
-    padding: 2.5rem 4.6875rem;
+    /* padding: 2.5rem 4.6875rem; */ padding:  22px 4.6875rem 4.4rem; /*unwant */
   }
   .pixelated-game {
     width: unset;
@@ -2302,6 +2417,9 @@
   .hotwheels-challenge-img-laptop-l {
     display: none;
   }
+  .hotwheels-challenge-text-img-laptop-l {
+    display: none;
+  }
 } 
 @media (min-width: 1440px) {
     .header {
@@ -2379,8 +2497,8 @@
      }
      .best-seller-shop-now {
       right: 5%;
-      bottom: 4rem;
       margin-right: 0;
+      margin-top: -19px;
      }
      .best-seller-icon {
       padding-bottom: 0.498rem;
@@ -2406,9 +2524,24 @@
       justify-content: center;
      }
      .hotwheels-challenge-text-img-laptop {
-      width: 176px;
-      height: 123.2px;
+      display: none;
      }
+     .hotwheels-challenge-text-img {
+      max-width: 267px;
+      transform: scale(0.7503);
+     }
+     .hotwheels-challenge-text-img-laptop-l {
+      display: block;
+      min-height: 1px;
+      opacity: 1;
+      max-width: 100%;
+     }
+
+
+     .hotwheels-race-laptop-screen {
+      display: none;   /* unwanted */
+     }
+
 }
 @media (min-width: 1920px) {
   .categories-collector-top {
@@ -2435,3 +2568,5 @@
     padding: 5.15rem 0 4.375rem;
   }
 }
+
+
