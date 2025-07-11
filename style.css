@@ -1185,6 +1185,7 @@
     width: 100%;
     box-sizing: border-box;
     cursor: pointer;
+    z-index: 98;
   }
   .about-hotwheels-top-img {
     display: block;
@@ -1195,6 +1196,9 @@
     border-style: none;
     max-width: 100%;
   }
+  .about-hotwheels-top-img-tablet {
+    display: none;
+  }
   .about-hotwheels-bottom {
     background-color: #fff;
     position: relative;
@@ -1202,6 +1206,7 @@
     box-sizing: border-box;
     display: block;
     cursor: pointer;
+    z-index: 99;
   }
   .about-hotwheels-bottom-img {
     padding-bottom: 35.557872784150156%;
@@ -1225,6 +1230,9 @@
     border-style: none;
     max-width: 100%;
   }
+  .about-hotwheels-bottom-img-tablet {
+    display: none;
+  }
   .about-hotwheels-bottom-text {
     padding: 1.125rem 1.25rem 3.125rem;
     text-align: center;
@@ -1245,19 +1253,20 @@
     font-family: 'Macho';
     font-size: 1.125rem;
     width: 18.25rem;
-    padding: 0.0625rem 2.625rem 0.4375rem;
+    padding: 0.0625rem 2.625rem 0.3375rem;
     height: auto;
-    line-height: 1.5;
+    line-height: 1.6;
     align-items: center;
     border: 4px solid transparent;
     border-radius: 1.5625rem;
     cursor: pointer;
-    font-weight: 700;
+    font-weight: 500;
     justify-content: center;
     text-decoration: none;
     transition: color .2s ease-in-out, font-size .4s ease-in-out, padding .4s ease-in-out;
     white-space: nowrap;
     min-width: 7.5rem;
+    letter-spacing: 0.14px;
   }
 
   /* footer {
@@ -1577,6 +1586,7 @@
   .hotwheels-formula-text-p {
     margin: 1rem 0 2.48rem;
   }
+  
 }
 @media (max-width: 767px) {
   .shop-arrow {
@@ -1843,6 +1853,36 @@
       max-width: 100%;
       box-sizing: border-box;
     }
+    .about-hotwheels {
+      margin-top: -1px;
+    }
+    .about-hotwheels-top-img {
+      display: none;
+    }
+    .about-hotwheels-top-img-tablet {
+      display: block;
+      min-height: 1px;
+      width: 100%;
+      opacity: 1;
+      transition: opactiy .3s;
+      border-style: none;
+      max-width: 100%;
+    }
+    .about-hotwheels-bottom-img-tablet {
+      display: block;
+      min-height: 1px;
+      width: 100%;
+      opacity: 1;
+      transition: opacity .3s;
+      border-style: none;
+      max-width: 100%;
+    }
+    .about-hotwheels-bottom-img-mobile {
+      display: none;
+    }
+    .about-hotwheels-bottom-text {
+      padding: 1.925rem 1.875rem 3.064rem;
+    }
 }
 @media (max-width: 1023px) {
     .all-brands-logo3 {
@@ -1882,6 +1922,9 @@
       display: none;
     }
     .hotwheels-formula-offical-img-laptop {
+      display: none;
+    }
+    .about-hotwheels-laptop {
       display: none;
     }
 }
@@ -2620,6 +2663,72 @@
   }
   .hotwheels-formula-text-i {
     margin-bottom: -1.5px;
+  }
+  .about-hotwheels {
+    display: none;
+  }
+  .about-hotwheels-laptop {
+    position: relative;
+    height: 119.45px;
+    box-sizing: border-box;
+    display: block;
+    margin-top: -2px;
+  }
+  .about-hotwheels-background-img-laptop {
+    padding-bottom: 11.666666666666668%;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+    z-index: 95;
+  }
+  .about-hotwheels-img-laptop {
+    display: block;
+    min-height: 1px;
+    width: 100%;
+    opacity: 1;
+    transition: opactiy .3s;
+    max-width: 100%;
+    border-style: none;
+  }
+  .about-hotwheels-laptop-text {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    width: calc(32% + 84px);
+    padding: 0.625rem 2.625rem;
+    padding-left: 4.6875rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 1439px;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-hotwheels-laptop-text-btn {
+    margin-top: 1rem;
+    background-color: #fff;
+    color: #333;
+    font-family: 'Macho';
+    font-size: 1.125rem;
+    width: 18.25rem;
+    padding: 0.0625em 2.625rem 0.4375rem;
+    height: auto;
+    line-height: 1.5;
+    min-width: 9.5rem;
+    align-items: center;
+    border: 4px solid transparent;
+    border-radius: 1.5625rem;
+    cursor: pointer;
+    display: inline-flex;
+    font-weight: 500;
+    justify-content: center;
+    white-space: nowrap;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 100;
   }
 }
 @media (max-width: 1439px) {
